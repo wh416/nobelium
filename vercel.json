@@ -1,6 +1,14 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "build": {
+    "env": {
+      "CANVAS_LIB_DIR": "/usr/lib64:/usr/lib",
+      "PYTHONPATH": "/usr/bin/python3",
+      "PYTHON": "/usr/bin/python3"
+    }
+  },
+  "installCommand": "yum update -y && yum install -y cairo-devel pango-devel libjpeg-turbo-devel giflib-devel librsvg2-devel python3 && npm install --legacy-peer-deps",
   "headers": [
     {
       "source": "/fonts/IBMPlexSansVar-Roman.woff2",
