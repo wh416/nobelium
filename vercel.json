@@ -1,6 +1,13 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "build": {
+    "env": {
+      "CANVAS_LIB_DIR": "/usr/lib64:/usr/lib",
+      "PYTHONPATH": "/usr/bin/python3"
+    }
+  },
+  "installCommand": "apt-get update && apt-get install -y --no-install-recommends libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev python3-distutils && npm install",
   "headers": [
     {
       "source": "/fonts/IBMPlexSansVar-Roman.woff2",
